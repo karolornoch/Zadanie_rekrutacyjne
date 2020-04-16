@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\Entities\Client.cs" />
+    <Compile Include="DB\Entities\Entity.cs" />
+    <Compile Include="DB\Entities\Order.cs" />
+    <Compile Include="DB\Entities\OrderProducts.cs" />
+    <Compile Include="DB\Entities\Product.cs" />
+    <Compile Include="DB\WarehouseContext.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,9 +86,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="EntityFramework6.Npgsql">
+      <Version>6.4.1</Version>
+    </PackageReference>
     <PackageReference Include="Octokit">
       <Version>0.47.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
